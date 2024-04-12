@@ -31,27 +31,27 @@ const Header = () => {
                     <ul className='header_nav-list'>
                         <HeaderLink
                             headerLinkClass={`header_nav-list-item-link ${shrink ? 'shrinkedFont' : ''}`}
-                            to='/'
+                            toLink='/'
                             textLink='Accueil'
                         />
                         <HeaderLink
                             headerLinkClass={`header_nav-list-item-link ${shrink ? 'shrinkedFont' : ''}`}
-                            to='/about'
+                            toLink='/about'
                             textLink='À Propos'
                         />
                         <HeaderLink
                             headerLinkClass={`header_nav-list-item-link ${shrink ? 'shrinkedFont' : ''}`}
-                            to='/medias'
+                            toLink='/medias'
                             textLink='Médias'
                         />
                         <HeaderLink
                             headerLinkClass={`header_nav-list-item-link ${shrink ? 'shrinkedFont' : ''}`}
-                            to='/rules'
+                            toLink='/rules'
                             textLink='Règlement'
                         />
                         <HeaderLink
                             headerLinkClass={`header_nav-list-item-link ${shrink ? 'shrinkedFont' : ''}`}
-                            to='/discord'
+                            toLink='/discord'
                             textLink='Discord'
                         />
                     </ul>

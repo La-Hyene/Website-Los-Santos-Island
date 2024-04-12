@@ -1,7 +1,15 @@
 .notFound{
     height: 100vh;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &_title{
-        font-size: large;
+        font-family: "Lobster", sans-serif;
+        font-size: 35px;
+        &>strong{
+            color: rgb(187, 5, 5);
+            font-weight: 600;
+        }
     }
 }

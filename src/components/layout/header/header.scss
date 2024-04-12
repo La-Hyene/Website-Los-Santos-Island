@@ -6,53 +6,71 @@
     align-items: center;
     align-content: center;
     width: 100%;
-    height: 90px;
+    height: 70px;
     padding: 20px;
     transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.15);
     &_logo{
+        position: relative;
         &-img{
-            width: 100px;
-            height: 100px;
+            position: absolute;
+            top: -25px;
+            left: 25px;
+            width: 150px;
+            height: 150px;
             border-radius: 100%;
+            filter: drop-shadow(0 0 20px rgba(201, 77, 220, 0.8));
         }
     }
     &_nav{
         height: 100%;
         &-list{
             height: 100%;
-            width: 25vw;
+            width: 500px;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
             font-family: "Lobster", sans-serif;
+            margin-right: 50px;
             &-item{
                 &-link{
-                    color: black;
+                    color: rgb(209, 134, 222);
+                    text-shadow: 1px 1px 2px rgb(69, 38, 43), 0 0 20px rgba(0, 0, 0, 0.5);
+                    font-size: 20px;
+                    -webkit-text-stroke: rgba(0, 0, 0, 0.43);
+                    -webkit-text-stroke-width: 0.01em;
                     text-decoration: none;
                     &:hover{
                         text-decoration: underline;
-                        color: rgb(36, 69, 69);
+                        color: rgb(236, 125, 255);
+                        -webkit-text-stroke: rgba(0, 0, 0, 0);
+                        -webkit-text-stroke-width: 0;
+                        text-shadow: 1px 1px 2px rgba(220, 0, 255, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
+                        font-size: 20px;
                     }
                     &:active{
                         color: red;
                     }
-                    &.shrinkedFont{
-                        color: white;
-                        &:hover{
-                            text-decoration: underline;
-                            color: rgb(73, 194, 194);
-                        }
-                        &:active{
-                            color: red;
-                        }
-                    }
+                    // Si tu veux un style différent pour le texte quand le header rétrécit
+                    // &.shrinkedFont{
+                    //     color: white;
+                    //     &:hover{
+                    //         text-decoration: underline;
+                    //         color: rgb(73, 194, 194);
+                    //     }
+                    //     &:active{
+                    //         color: red;
+                    //     }
+                    // }
                 }
             }
         }
     }
     &.shrink {
-        height: 72px;
-        background-color: #00000078; // Light grey background on scroll
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
     }
 }

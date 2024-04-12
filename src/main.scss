@@ -45,3 +45,24 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+// General Style
+body{
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// ScrollBar Style
+::-webkit-scrollbar {
+    width: 10px;
+    &-track {
+        background-color: rgba(132, 37, 146, 0.5);
+    }
+    &-thumb {
+        background-color: rgba(132, 37, 146, 0.5);
+        &:hover {
+            background-color: rgba(132, 37, 146, 0.8);
+        }
+    }
+}
